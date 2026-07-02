@@ -1,28 +1,28 @@
-name: CI
+name: ci
 
 on:
   push:
-    branches: [ main, master ]
   pull_request:
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Use Node.js 18.x
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '18.x'
-          cache: 'npm'
-
-      - name: Install and test server
-        run: |
-          npm -C server ci
-          npm -C server test -q
-
-      - name: Install and build client
-        run: |
-          npm -C client ci
-          npm -C client run build
+          node-version: 24.x
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install dependencies (root)
+        run: npm ci
+        env:
+          NODE_OPTIONS: --trace-deprecation
+      - name: Server tests
+        run: npm test -w server
+        env:
+          NODE_OPTIONS: --trace-deprecation
+      - name: Client build
+        run: npm run -w client build
+        env:
+          NODE_OPTIONS: --trace-deprecation
