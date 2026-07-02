@@ -1,5 +1,6 @@
 export async function postQuery(query, profile) {
-  const res = await fetch('/api/query', {
+  const API_BASE = import.meta.env.PROD ? (import.meta.env.VITE_API_BASE || '') : ''
+  const res = await fetch(`${API_BASE}/api/query`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query, profile })
@@ -14,3 +15,4 @@ export async function postQuery(query, profile) {
   }
   return res.json()
 }
+
