@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install dependencies (root)
+        run: npm ci
+        env:
+          NODE_OPTIONS: --trace-deprecation
+      - name: Server tests
+        run: npm test -w server
+        env:
+          NODE_OPTIONS: --trace-deprecation
+      - name: Client build
+        run: npm run -w client build
+        env:
+          NODE_OPTIONS: --trace-deprecation
