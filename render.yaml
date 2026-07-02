@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: food-safety-backend
+    rootDir: server
+    env: node
+    buildCommand: npm ci
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: USE_HF_INFERENCE
+        value: "1"
+      - key: MODEL_ID
+        value: Xenova/distilgpt2
+    autoDeploy: true

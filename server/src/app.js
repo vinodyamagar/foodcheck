@@ -1,10 +1,17 @@
 const express = require('express');
 const cors = require('cors');
+const compression = require('compression');
 const { answerQuery } = require('./recommendation');
 
 const app = express();
 
-app.use(cors());
+if (process.env.NODE_ENV === 'production') {
+  app.set('trust proxy', 1);
+}
+
+const allowed = process.env.CORS_ORIGIN;
+app.use(cors({ origin: allowed || '*' }));
+app.use(compression());
 app.use(express.json({ limit: '1mb' }));
 
 app.get('/api/health', (req, res) => {
@@ -34,3 +41,4 @@ app.post('/api/query', async (req, res) => {
 });
 
 module.exports = app;
+
