@@ -54,6 +54,10 @@ npm run build
   - "Is instant noodles safe for my 5-year-old?"
   - "What about drinks with sodium benzoate and artificial colours?"
 
+## Deployment (Frontend on Vercel)
+
+See docs/deploy-vercel.md for step-by-step instructions to deploy the React frontend to Vercel from the main branch (Root Directory=client, Build Command=npm run build, Output Directory=dist, and the VITE_API_BASE environment variable).
+
 ## Scope and Safety
 
 - GPT-2 is not instruction-tuned and may hallucinate; we mitigate by grounding with retrieved facts and listing sources. Recommendations are derived from the knowledge base.
