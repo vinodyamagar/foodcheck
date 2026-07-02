@@ -1,0 +1,19 @@
+{
+  "name": "food-safety-backend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.22.2"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "supertest": "6.3.3"
+  }
+}
+

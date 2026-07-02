@@ -1,0 +1,16 @@
+# Node
+node_modules/
+**/node_modules/
+.npm/
+.npmrc
+npm-debug.log*
+
+# Vite
+client/dist/
+
+# Jest
+coverage/
+
+# IDE
+.vscode/
+.DS_Store
