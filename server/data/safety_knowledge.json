@@ -1,0 +1,72 @@
+[
+  {
+    "id": "e211_sodium_benzoate",
+    "title": "Sodium benzoate (E211) as a preservative",
+    "tags": ["E211", "sodium benzoate", "preservative", "soft drinks", "India", "FSSAI"],
+    "summary": "Sodium benzoate (E211) is permitted in limited amounts but can irritate sensitive individuals and is generally unnecessary in many drinks.",
+    "recommendation": ["Prefer beverages without E211 when possible.", "Limit fizzy/soft drinks for children.", "Check the ingredient list for E-numbers like E211."],
+    "sources": [
+      { "title": "FSSAI additives list", "url": "https://fssai.gov.in" }
+    ]
+  },
+  {
+    "id": "e621_msg",
+    "title": "Monosodium glutamate (MSG, E621)",
+    "tags": ["E621", "MSG", "flavour enhancer", "snacks", "noodles", "India"],
+    "summary": "MSG (E621) enhances flavour but is not essential. Some children may be sensitive. Processed snacks and instant noodles often contain it.",
+    "recommendation": ["Prefer snacks without added MSG (E621).", "Choose whole foods and simple ingredient lists for kids."],
+    "sources": [
+      { "title": "General guidance on additives", "url": "https://www.who.int/news-room/q-a-detail/food-additives-q-a" }
+    ]
+  },
+  {
+    "id": "artificial_colours",
+    "title": "Artificial colours in sweets and snacks (E102, E110, E122)",
+    "tags": ["E102", "E110", "E122", "artificial colours", "tartrazine", "sunset yellow", "azorubine", "India"],
+    "summary": "Certain artificial colours (like E102 Tartrazine, E110 Sunset Yellow, E122 Azorubine) may cause reactions in sensitive children.",
+    "recommendation": ["Choose products without bright artificial colours.", "Check for E-numbers on labels and prefer natural colours."],
+    "sources": [
+      { "title": "Food colours info", "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours" }
+    ]
+  },
+  {
+    "id": "added_sugar",
+    "title": "High added sugar in packaged foods",
+    "tags": ["sugar", "added sugar", "per 100g", "FSSAI", "India"],
+    "summary": "Many packaged foods and drinks contain high added sugar. Checking per 100g/100ml helps compare options.",
+    "recommendation": ["Pick options with less added sugar per 100g/100ml.", "Avoid energy drinks for children.", "Prefer whole and minimally processed snacks."],
+    "sources": [
+      { "title": "Sugar intake guidance", "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" }
+    ]
+  },
+  {
+    "id": "high_sodium_snacks",
+    "title": "High sodium in savoury snacks and instant noodles",
+    "tags": ["sodium", "salt", "snacks", "noodles", "India"],
+    "summary": "Instant noodles and savoury snacks can be high in sodium, which is not ideal for young children.",
+    "recommendation": ["Limit high-sodium snacks, especially for toddlers.", "Compare sodium per 100g and choose lower-salt options."],
+    "sources": [
+      { "title": "Salt and health", "url": "https://www.who.int/news-room/fact-sheets/detail/salt-reduction" }
+    ]
+  },
+  {
+    "id": "energy_drinks_children",
+    "title": "Energy drinks are not for children",
+    "tags": ["energy drinks", "caffeine", "children", "India"],
+    "summary": "Energy drinks with caffeine and additives are not recommended for children.",
+    "recommendation": ["Avoid energy drinks for children.", "Offer water, milk, or fresh homemade beverages instead."],
+    "sources": [
+      { "title": "Pediatric advice on caffeine", "url": "https://www.aap.org" }
+    ]
+  },
+  {
+    "id": "infant_food_labelling",
+    "title": "Infant foods and labelling (FSSAI)",
+    "tags": ["FSSAI", "infant", "labelling", "India"],
+    "summary": "Infant foods have specific FSSAI standards and labelling. Parents should follow age-appropriate guidance.",
+    "recommendation": ["Follow age-appropriate feeding recommendations.", "Check FSSAI-compliant labels and instructions."],
+    "sources": [
+      { "title": "FSSAI standards", "url": "https://fssai.gov.in" }
+    ]
+  }
+]

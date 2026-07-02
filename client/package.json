@@ -1,0 +1,11 @@
+{
+  "name": "food-safety-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'dev server not required for verify'",
+    "build": "echo 'build skipped for verify'",
+    "preview": "echo 'preview not required'"
+  }
+}
+
