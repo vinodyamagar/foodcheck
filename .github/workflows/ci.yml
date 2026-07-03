@@ -11,18 +11,14 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
-          node-version: 24.x
+          node-version: lts/*
           cache: npm
-          cache-dependency-path: package-lock.json
-      - name: Install dependencies (root)
-        run: npm ci
-        env:
-          NODE_OPTIONS: --trace-deprecation
+          cache-dependency-path: '**/package-lock.json'
+      - name: Install dependencies (server)
+        run: npm ci -w server
+      - name: Install dependencies (client)
+        run: npm ci -w client
       - name: Server tests
         run: npm test -w server
-        env:
-          NODE_OPTIONS: --trace-deprecation
       - name: Client build
         run: npm run -w client build
-        env:
-          NODE_OPTIONS: --trace-deprecation
